@@ -1,4 +1,4 @@
-package it.exercise.saluto;
+package it.exercise.java.spring.mvc.controllers;
 
 import java.time.LocalTime;
 
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/")
 public class Saluto {
 	
-		@GetMapping("/Saaluto")
+		@GetMapping("/saluto")
 		public String saluto(@RequestParam("name") String name, Model model) {
 			model.addAttribute("name", name);
 			model.addAttribute("time", LocalTime.now());
